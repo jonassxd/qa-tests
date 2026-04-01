@@ -65,8 +65,7 @@ Inclui **testes positivos e negativos**, validação de respostas, tokens e inte
 ## 📝 Observações
 
 - Todos os testes estão configurados para rodar no Postman  
-- Collection pronta para demonstrar **habilidades em QA manual e automatizado**  
-- JSON já exportado e pronto para ser subido no GitHub  
+- Collection pronta para demonstrar **habilidades em QA manual e automatizado**   
 
 ```text
 auth_token: (deixe vazio, será preenchido após login)
