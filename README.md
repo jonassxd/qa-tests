@@ -1,23 +1,73 @@
-# QA API Tests
+# 🧪 QA API Collection - Jonas
 
-Projeto de testes de API utilizando Postman.
+[![Postman](https://img.shields.io/badge/Postman-Collection-orange?logo=postman)](https://www.postman.com/)  
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]  
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
 
-## Cenários testados
+**Collection de testes de API para Postman** — completo com cenários positivos e negativos, pronto para demonstrar **testes manuais, automatizados e validação de APIs**.
 
-### Login
-- Sucesso: retorno de token (200)
-- Erro: validação de mensagem (400)
+---
 
-### Listagem de usuários
-- Retorno de lista
-- Validação de dados (email)
+## 🚀 Sobre a Collection
 
-### Usuário inexistente
-- Validação de comportamento da API (data null)
+Esta coleção utiliza a API [ReqRes](https://reqres.in/) para simular cenários comuns de teste de APIs.
 
-## Ferramentas
-- Postman
-- JSON
+| Endpoint             | Método | Testes Automatizados                                   |
+|---------------------|--------|-------------------------------------------------------|
+| Login - Sucesso     | POST   | Status 200, token existe                              |
+| Login - Erro        | POST   | Status 400, mensagem de erro existe                   |
+| Lista de Usuários   | GET    | Status 200, lista não vazia, email existe             |
+| Usuário Inexistente | GET    | Status 404 / data null                                |
 
-## Objetivo
-Validar comportamento de APIs em diferentes cenários, garantindo qualidade e confiabilidade.
+Inclui testes **positivos e negativos**, validação de respostas, tokens, e integridade de dados.
+
+---
+
+## ⚙️ Pré-requisitos
+
+- [Postman](https://www.postman.com/downloads/) instalado  
+- Conexão com a internet  
+- JSON da Collection: [`QA_API_Collection.json`](./QA_API_Collection.json)  
+
+---
+
+## 📂 Como usar
+
+1. Abra o **Postman**.  
+2. Clique em **Import → Upload Files → selecione `QA_API_Collection.json`**.  
+3. Crie um **Environment** com a variável `auth_token`.  
+4. Execute **Login - Sucesso** primeiro para gerar o token.  
+5. Copie o token retornado e coloque na variável `auth_token` do Environment.  
+6. Execute os demais endpoints individualmente ou via **Collection Runner**.  
+
+> ⚠️ Para evitar erros 401, faça login antes de executar endpoints que exigem token.
+
+---
+
+## 🧪 Testes Automatizados Incluídos
+
+- Status Code correto  
+- Token existe após login  
+- Lista de usuários não vazia  
+- Email do usuário existe  
+- Usuário inexistente retorna `data null`  
+- Mensagem de erro em login inválido  
+
+---
+
+## 🔗 Referências
+
+- [ReqRes API Docs](https://reqres.in/)  
+- [Postman Learning Center](https://learning.postman.com/)  
+- [Allure Reports](https://docs.qameta.io/allure/) (para relatórios automáticos)  
+
+---
+
+## 📝 Observações
+
+- Todos os testes estão configurados para rodar no Postman.  
+- Collection pronta para demonstrar habilidades em QA manual e automatizado.  
+- JSON já exportado e pronto para ser subido no GitHub.  
+
+```text
+auth_token: (deixe vazio, será preenchido após login)
