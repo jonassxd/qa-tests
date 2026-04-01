@@ -4,21 +4,20 @@ Projeto de testes de API utilizando Postman.
 
 ## Cenários testados
 
-### Login com sucesso
-- Método: POST
-- Endpoint: /api/login
-- Esperado: 200 OK
-- Validação: retorno de token
+### Login
+- Sucesso: retorno de token (200)
+- Erro: validação de mensagem (400)
 
-### Login com erro
-- Método: POST
-- Endpoint: /api/login
-- Esperado: 400 Bad Request
-- Validação: retorno de mensagem de erro
+### Listagem de usuários
+- Retorno de lista
+- Validação de dados (email)
+
+### Usuário inexistente
+- Validação de comportamento da API (data null)
 
 ## Ferramentas
 - Postman
 - JSON
 
 ## Objetivo
-Validar comportamento de APIs, garantindo respostas corretas para cenários de sucesso e erro.
+Validar comportamento de APIs em diferentes cenários, garantindo qualidade e confiabilidade.
