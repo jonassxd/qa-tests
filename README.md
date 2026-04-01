@@ -2,24 +2,24 @@
 
 [![Postman](https://img.shields.io/badge/Postman-Collection-orange?logo=postman)](https://www.postman.com/)  
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
+![License](https://img.shields.io/badge/License-MIT-green)  
 
-**Collection de testes de API para Postman** — completo com cenários positivos e negativos, pronto para demonstrar **testes manuais, automatizados e validação de APIs**.
+**Collection de testes de API para Postman** — completa com cenários positivos e negativos, pronta para demonstrar **QA manual e automatizado**.  
 
 ---
 
 ## 🚀 Sobre a Collection
 
-Esta coleção utiliza a API [ReqRes](https://reqres.in/) para simular cenários comuns de teste de APIs.
+Esta coleção utiliza a API [ReqRes](https://reqres.in/) para simular cenários comuns de teste de APIs:
 
-| Endpoint             | Método | Testes Automatizados                                   |
-|---------------------|--------|-------------------------------------------------------|
-| Login - Sucesso     | POST   | Status 200, token existe                              |
-| Login - Erro        | POST   | Status 400, mensagem de erro existe                   |
-| Lista de Usuários   | GET    | Status 200, lista não vazia, email existe             |
-| Usuário Inexistente | GET    | Status 404 / data null                                |
+| Endpoint | Método | Testes Automatizados |
+|----------|-------|------------------|
+| Login - Sucesso | POST | Status 200, token existe |
+| Login - Erro | POST | Status 400, mensagem de erro existe |
+| Lista de Usuários | GET | Status 200, lista não vazia, email existe |
+| Usuário Inexistente | GET | Status 404 / data null |
 
-Inclui testes **positivos e negativos**, validação de respostas, tokens, e integridade de dados.
+Inclui **testes positivos e negativos**, validação de respostas, tokens, e integridade de dados.
 
 ---
 
@@ -33,25 +33,25 @@ Inclui testes **positivos e negativos**, validação de respostas, tokens, e int
 
 ## 📂 Como usar
 
-1. Abra o **Postman**.  
-2. Clique em **Import → Upload Files → selecione `QA_API_Collection.json`**.  
-3. Crie um **Environment** com a variável `auth_token`.  
-4. Execute **Login - Sucesso** primeiro para gerar o token.  
-5. Copie o token retornado e coloque na variável `auth_token` do Environment.  
-6. Execute os demais endpoints individualmente ou via **Collection Runner**.  
+1. Abra o **Postman**  
+2. Clique em **Import → Upload Files → selecione `QA_API_Collection.json`**  
+3. Crie um **Environment** com a variável `auth_token` (deixe vazio)  
+4. Execute **Login - Sucesso** para gerar o token  
+5. Copie o token e coloque na variável `auth_token` do Environment  
+6. Execute os demais endpoints manualmente  
 
-> ⚠️ Para evitar erros 401, faça login antes de executar endpoints que exigem token.
+> ⚠️ Para evitar erros 401, faça login antes de executar endpoints que exigem token.  
 
 ---
 
-## 🧪 Testes Automatizados Incluídos
+## 🧪 Testes Automatizados
 
-- Status Code correto  
-- Token existe após login  
-- Lista de usuários não vazia  
-- Email do usuário existe  
-- Usuário inexistente retorna `data null`  
-- Mensagem de erro em login inválido  
+- ✅ Status Code  
+- ✅ Token existe  
+- ✅ Lista de usuários não vazia  
+- ✅ Email do usuário existe  
+- ✅ Usuário inexistente (data null)  
+- ✅ Mensagem de erro em login inválido  
 
 ---
 
@@ -59,15 +59,15 @@ Inclui testes **positivos e negativos**, validação de respostas, tokens, e int
 
 - [ReqRes API Docs](https://reqres.in/)  
 - [Postman Learning Center](https://learning.postman.com/)  
-- [Allure Reports](https://docs.qameta.io/allure/) (para relatórios automáticos)  
+- [Allure Reports](https://docs.qameta.io/allure/) para relatórios automáticos  
 
 ---
 
 ## 📝 Observações
 
-- Todos os testes estão configurados para rodar no Postman.  
-- Collection pronta para demonstrar habilidades em QA manual e automatizado.  
-- JSON já exportado e pronto para ser subido no GitHub.  
+- Todos os testes estão configurados para rodar no Postman  
+- Collection pronta para demonstrar **habilidades em QA manual e automatizado**  
+- JSON já exportado e pronto para ser subido no GitHub  
 
 ```text
 auth_token: (deixe vazio, será preenchido após login)
