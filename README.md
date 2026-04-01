@@ -2,7 +2,6 @@
 
 [![Postman](https://img.shields.io/badge/Postman-Collection-orange?logo=postman)](https://www.postman.com/)  
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]  
-![License](https://img.shields.io/badge/License-MIT-green)  
 
 **Collection de testes de API para Postman** — completa com cenários positivos e negativos, pronta para demonstrar **QA manual e automatizado**.  
 
