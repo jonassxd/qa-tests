@@ -30,27 +30,27 @@ Inclui **testes positivos e negativos**, validação de respostas, tokens e inte
 
 ---
 
-## 📂 Como usar
+📂 Como usar
+Abra o Postman
+Clique em Import → Upload Files → selecione QA_API_Collection.json
 
-1. Abra o **Postman**  
-2. Clique em **Import → Upload Files → selecione `QA_API_Collection.json`**  
-3. Crie um **Environment** com a variável `auth_token` (deixe vazio)  
-4. Execute **Login - Sucesso** para gerar o token  
-5. Copie o token e coloque na variável `auth_token` do Environment  
-6. Execute os demais endpoints manualmente  
+Crie um Environment com a variável:
 
-> ⚠️ Para evitar erros 401, faça login antes de executar endpoints que exigem token.
+auth_token: (deixe vazio, será preenchido após login)
+Execute Login - Sucesso primeiro para gerar o token
+Copie o token retornado e coloque na variável auth_token do Environment
+Execute os demais endpoints manualmente
 
+⚠️ Para evitar erros 401, faça login antes de executar endpoints que exigem token.
 ---
 
-## 🧪 Testes Automatizados
-
-- ✅ Status Code  
-- ✅ Token existe  
-- ✅ Lista de usuários não vazia  
-- ✅ Email do usuário existe  
-- ✅ Usuário inexistente (data null)  
-- ✅ Mensagem de erro em login inválido  
+🧪 Testes Automatizados Incluídos
+✅ Status Code
+✅ Token existe
+✅ Lista de usuários não vazia
+✅ Email do usuário existe
+✅ Usuário inexistente (data null)
+✅ Mensagem de erro em login inválido
 
 ---
 
@@ -67,5 +67,4 @@ Inclui **testes positivos e negativos**, validação de respostas, tokens e inte
 - Todos os testes estão configurados para rodar no Postman  
 - Collection pronta para demonstrar **habilidades em QA manual e automatizado**   
 
-```text
-auth_token: (deixe vazio, será preenchido após login)
+
